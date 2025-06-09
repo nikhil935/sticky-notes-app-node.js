@@ -1,4 +1,4 @@
-# Sticky Notes App Node.js Application with Express, Angular Frontend, and OngDB Integration
+# Sticky Notes App Node.js Application with Express, Angular Frontend, and MongoDB Integration
 
 ## Overview
 This is a full-stack application built using modern technologies. The application is powered by:
@@ -18,22 +18,7 @@ Frontend:
 Backend:
  - Node.js: A runtime environment to execute JavaScript on the server side.
  - Express.js: A minimal and flexible web framework for building REST APIs.
- - MongDB: A temporary database designed for high-performance, flexible data management.
+ - MongoDB: A temporary database designed for high-performance, flexible data management.
 
-# Project Structure
-
-backend/
-├── controllers/       # Request handlers for API endpoints
-├── models/            # Database schema definitions (for OngDB)
-├── routes/            # Route definitions
-├── app.js             # Main server file
-└── package.json       # Dependencies and scripts
-
-frontend/
-├── src/
-│   ├── app/
-│   │   ├── components/   # Angular components
-│   │   ├── services/     # Services for API calls
-│   │   ├── app.module.ts # Angular module definitions
-├── angular.json         # Angular configuration
-└── package.json         # Frontend dependencies and scripts
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
