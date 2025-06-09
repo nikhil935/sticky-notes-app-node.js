@@ -1,0 +1,19 @@
+<h1>My Notes</h1>
+
+<form (submit)="saveNote(); $event.preventDefault();">
+  <input [(ngModel)]="newNote.name" name="name" placeholder="Title" required />
+  <input [(ngModel)]="newNote.content" name="content" placeholder="Content" required />
+  <button type="submit">{{ editingNote ? 'Update' : 'Add' }} Note</button>
+  <button type="button" (click)="resetForm()" *ngIf="editingNote">Cancel</button>
+</form>
+
+<div>{{errormsg}}</div>
+<ul>
+  <li *ngFor="let note of notes">
+    <strong>{{ note.name }}</strong> {{ note.content }}
+    <div>
+    <button (click)="edit(note)">Edit</button>
+    <button (click)="delete(note._id!)">Delete</button>
+    </div>
+  </li>
+</ul>
